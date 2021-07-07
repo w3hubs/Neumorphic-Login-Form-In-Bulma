@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neumorphic Login Form in Bulma</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style type="text/css">
+      body{
+      padding: 0;
+      margin: 0;
+      background: #ecf0f3;
+      }
+      .hero{
+      height: 100vh;
+      }
+      .hero-body{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      }
+      .neumorphic{
+      box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+      border-color: #ced4da !important;
+      background: #ecf0f3;
+      padding: 50px 20px 30px;
+      border-radius: 8px;
+      margin: auto;
+      }
+      .button{
+      margin-top: 10px;
+      box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+      border-color: #ced4da !important;
+      background: #ecf0f3;
+      color:#8395a7 !important;
+      }
+      input{
+      border-color: #ced4da !important;
+      background: #ecf0f3 !important;
+      color: #8395a7 !important;
+      box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff !important;
+      height: 3em !important;
+      }
+      @media(min-width: 952px){
+      .neumorphic{
+      width: 40%;
+      }
+      }  
+      @media(max-width: 952px){
+      .neumorphic{
+      width: 60%;
+      }
+      }
+      @media(max-width: 525px){
+      .neumorphic{
+      width: 100%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero is-fullheighthas-background-light ">
+      <div class="hero-body">
+        <div class="neumorphic">
+          <div class="field mb-0">
+            <p class="control">
+              <input class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field mb-0">
+            <p class="control">
+              <input class="input" type="password" placeholder="Password">
+              <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+              </span>
+            </p>
+          </div>
+          <a class="button is-medium">Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
